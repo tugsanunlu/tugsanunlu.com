@@ -1,6 +1,17 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import "../utils/fontawesome"
+import UIkit from "uikit"
+
+/* pass callback queue for offcanvas close issue
+TODO: alternative */
+const offCanvasClose = () => {
+  setTimeout(() => {
+    UIkit.offcanvas('#offcanvas-push').hide();
+  }, 100);
+}
 
 const Header = ({ siteTitle, siteSubTitle }) => (
   <header
@@ -9,6 +20,9 @@ const Header = ({ siteTitle, siteSubTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
+    <div className="header__links">
+      <FontAwesomeIcon icon={["fas", "bars"]} data-uk-toggle="target: #offcanvas-push" />
+    </div>
     <div
       style={{
         margin: `0 auto`,
@@ -26,19 +40,24 @@ const Header = ({ siteTitle, siteSubTitle }) => (
         >
           {siteTitle}
           <div
-            style={{ fontWeight: "500", fontSize: "0.9rem", marginTop: "5px" }}
+            style={{ fontWeight: "500", fontSize: "1.1rem", marginTop: "5px" }}
           >
             {siteSubTitle}
           </div>
         </Link>
       </h1>
-      <div className="header__links">
-        <Link to="/" activeClassName="header__links--active">
-          home
-        </Link>
-        <Link to="/contact" activeClassName="header__links--active">
-          contact
-        </Link>
+    </div>
+
+    <div id="offcanvas-push" data-uk-offcanvas="mode: push; overlay: true;">
+      <div className="uk-offcanvas-bar uk-flex uk-flex-column">
+        <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+          <li className="uk-active">
+            <Link to="/" onClick={offCanvasClose}>home</Link>
+          </li>
+          <li className="uk-active">
+            <Link to="/contact" onClick={offCanvasClose}>contact</Link>
+          </li>
+        </ul>
       </div>
     </div>
   </header>

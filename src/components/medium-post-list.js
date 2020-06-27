@@ -10,9 +10,9 @@ const Medium = ({ posts }) => {
   return (
     <div className="posts">
       <h3>
-        <FontAwesomeIcon icon={["fab", "medium"]} /> Blog Posts
+        <FontAwesomeIcon icon={["fab", "medium"]} /> Recent Blog Posts
       </h3>
-      <div className="medium-posts">{postList}</div>
+      <div>{postList}</div>
     </div>
   )
 }

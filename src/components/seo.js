@@ -38,7 +38,7 @@ function SEO({ description, lang, meta, title }) {
       link={[
         {
           href:
-            "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@500;600;900&display=swap",
+            "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@500;900&display=swap",
           rel: "stylesheet",
         },
       ]}

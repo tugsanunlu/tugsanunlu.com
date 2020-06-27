@@ -1,19 +1,18 @@
 import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import "../utils/fontawesome"
 
 const MediumPost = ({ post }) => {
   return (
-    <div className="medium-posts__post">
-      <a href={post.link} target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={["fas", "angle-right"]} /> {post.title}
-        <div>
-          <small>{post.pubDate}</small>
+    <div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-1@s uk-margin" data-uk-grid>
+      <div>
+        <div className="uk-card-body">
+          <h3 className="uk-card-title">{post.title}</h3>
+          <div>{post.categories.map(category => `#${category} `)}</div>
+          <div className="uk-margin">{post.pubDate.split(' ')[0]}</div>
+          <a href={post.link} target="_blank" rel="noopener noreferrer">
+            <button className="uk-button uk-button-secondary">READ</button>
+          </a>
         </div>
-        <div>
-          <small>{post.categories.map(category => `#${category} `)}</small>
-        </div>
-      </a>
+      </div>
     </div>
   )
 }
