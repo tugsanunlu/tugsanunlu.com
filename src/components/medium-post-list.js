@@ -10,7 +10,7 @@ const Medium = ({ posts }) => {
   return (
     <div className="posts">
       <h3>
-        <FontAwesomeIcon icon={["fab", "medium"]} /> Recent Blog Posts
+        <FontAwesomeIcon icon={["fab", "medium"]} style={{ width: '23px', height: '23px' }} /> Recent Blog Posts
       </h3>
       <div>{postList}</div>
     </div>
