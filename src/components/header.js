@@ -19,6 +19,8 @@ const Header = ({ siteTitle, siteSubTitle }) => (
       background: `#660e1e`,
       marginBottom: `1.45rem`,
     }}
+    className="uk-margin-medium-bottom uk-box-shadow-large"
+    data-uk-sticky
   >
     <div className="header__links">
       <FontAwesomeIcon icon={["fas", "bars"]} data-uk-toggle="target: #offcanvas-push" />
@@ -53,6 +55,9 @@ const Header = ({ siteTitle, siteSubTitle }) => (
         <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
           <li className="uk-active">
             <Link to="/" onClick={offCanvasClose}>home</Link>
+          </li>
+          <li className="uk-active">
+            <Link to="/work-experience" onClick={offCanvasClose}>work experience</Link>
           </li>
           <li className="uk-active">
             <Link to="/contact" onClick={offCanvasClose}>contact</Link>

@@ -1,14 +1,12 @@
 import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import "../utils/fontawesome"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const SecondPage = () => (
+const Contact = () => (
   <Layout>
     <SEO title="contact" />
     <h3>
-      <FontAwesomeIcon icon={["fas", "envelope"]} style={{ width: '23px', height: '23px' }} /> Contact
+      contact
     </h3>
     <div>
       <a href="mailto: unlutugsan@gmail.com">
@@ -18,4 +16,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default Contact

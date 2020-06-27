@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import favicon from "../icons/favicon.ico"
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -41,6 +42,10 @@ function SEO({ description, lang, meta, title }) {
             "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@500;900&display=swap",
           rel: "stylesheet",
         },
+        {
+          href: favicon,
+          rel: "icon"
+        }
       ]}
       meta={[
         {
