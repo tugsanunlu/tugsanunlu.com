@@ -20,7 +20,6 @@ const Header = ({ siteTitle, siteSubTitle }) => (
       marginBottom: `1.45rem`,
     }}
     className="uk-margin-medium-bottom uk-box-shadow-large"
-    data-uk-sticky
   >
     <div className="header__links">
       <FontAwesomeIcon icon={["fas", "bars"]} data-uk-toggle="target: #offcanvas-push" />
