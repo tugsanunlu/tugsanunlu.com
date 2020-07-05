@@ -22,7 +22,7 @@ const IndexPage = () => {
       {mediumPosts
         ? <MediumPostList posts={mediumPosts} />
         : (<center>
-          <FontAwesomeIcon icon={["fas", "spinner"]} className="loader fa-spin fa-2x" />
+          <FontAwesomeIcon icon={["fas", "spinner"]} spin />
         </center>)
       }
     </Layout>

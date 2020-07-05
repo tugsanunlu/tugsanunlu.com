@@ -7,25 +7,25 @@ const experiences = {
     {
       company: "OKULİSTİK",
       date: "February 2020 - Present",
-      title: "Front-End Developer",
+      title: "FRONT-END DEVELOPER",
       isActive: true
     },
     {
       company: "ITOPYA",
       date: "January 2018 - Februrary 2019",
-      title: "Front-End Developer",
+      title: "FRONT-END DEVELOPER",
       isActive: false
     },
     {
       company: "TREEGROUP",
       date: "JULY 2014 - DECEMBER 2017",
-      title: "Front-End Developer",
+      title: "FRONT-END DEVELOPER",
       isActive: false
     },
     {
       company: "EVRIMNET DIGITAL",
       date: "JUNE 2012 - AUGUST 2012",
-      title: "Web Developer Intern",
+      title: "WEB DEVELOPER INTERN",
       isActive: false
     }
   ]

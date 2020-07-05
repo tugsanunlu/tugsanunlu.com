@@ -3,15 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "../utils/fontawesome"
-import UIkit from "uikit"
-
-/* pass callback queue for offcanvas close issue
-TODO: alternative */
-const offCanvasClose = () => {
-  setTimeout(() => {
-    UIkit.offcanvas('#offcanvas-push').hide();
-  }, 250);
-}
+import { offCanvasBeforeShow } from "../utils/uikit"
 
 const Header = ({ siteTitle, siteSubTitle }) => (
   <header
@@ -22,7 +14,7 @@ const Header = ({ siteTitle, siteSubTitle }) => (
     className="uk-margin-medium-bottom uk-box-shadow-large"
   >
     <div className="header__links">
-      <FontAwesomeIcon icon={["fas", "bars"]} data-uk-toggle="target: #offcanvas-push" />
+      <FontAwesomeIcon icon={["fas", "bars"]} data-uk-toggle="target: #offcanvas-push" onClick={offCanvasBeforeShow} />
     </div>
     <div
       style={{
@@ -49,20 +41,20 @@ const Header = ({ siteTitle, siteSubTitle }) => (
       </h1>
     </div>
 
-    <div id="offcanvas-push" data-uk-offcanvas="mode: push; overlay: true;">
+    <div id="offcanvas-push" data-uk-offcanvas="mode: push;">
       <div className="uk-offcanvas-bar uk-flex uk-flex-column">
         <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
           <li className="uk-active">
-            <Link to="/" onClick={offCanvasClose}>home</Link>
+            <Link to="/">home</Link>
           </li>
           <li className="uk-active">
-            <Link to="/work-experience" onClick={offCanvasClose}>work experience</Link>
+            <Link to="/work-experience">work experience</Link>
           </li>
           <li className="uk-active">
-            <Link to="/volunteer-experience" onClick={offCanvasClose}>volunteer experience</Link>
+            <Link to="/volunteer-experience">volunteer experience</Link>
           </li>
           <li className="uk-active">
-            <Link to="/contact" onClick={offCanvasClose}>contact</Link>
+            <Link to="/contact">contact</Link>
           </li>
         </ul>
       </div>

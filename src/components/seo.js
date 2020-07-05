@@ -35,7 +35,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | {tugsanunlu: "${site.siteMetadata.subTitle}"} `}
+      titleTemplate={`%s | tuğsan ünlü`}
       link={[
         {
           href:
