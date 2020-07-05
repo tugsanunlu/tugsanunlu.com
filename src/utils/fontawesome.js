@@ -10,7 +10,8 @@ import {
   faEnvelope,
   faTheaterMasks,
   faAngleRight,
-  faBars
+  faBars,
+  faSpinner
 } from "@fortawesome/free-solid-svg-icons"
 
 library.add(
@@ -22,5 +23,6 @@ library.add(
   faEnvelope,
   faTheaterMasks,
   faAngleRight,
-  faBars
+  faBars,
+  faSpinner
 )

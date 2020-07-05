@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import MediumPostList from "../components/medium-post-list"
 import Axios from "axios"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '../utils/fontawesome'
 
 const IndexPage = () => {
   const [mediumPosts, setMediumPosts] = useState(0)
@@ -10,14 +12,19 @@ const IndexPage = () => {
     Axios.get(
       "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@tugsanunlu"
     ).then(resp => {
-      setMediumPosts(resp.data.items)
+      setMediumPosts(resp.data.items);
     })
   }, [])
 
   return (
     <Layout>
       <SEO title="home" />
-      <MediumPostList posts={mediumPosts} />
+      {mediumPosts
+        ? <MediumPostList posts={mediumPosts} />
+        : (<center>
+          <FontAwesomeIcon icon={["fas", "spinner"]} className="loader fa-spin fa-2x" />
+        </center>)
+      }
     </Layout>
   )
 }

@@ -10,7 +10,7 @@ TODO: alternative */
 const offCanvasClose = () => {
   setTimeout(() => {
     UIkit.offcanvas('#offcanvas-push').hide();
-  }, 100);
+  }, 250);
 }
 
 const Header = ({ siteTitle, siteSubTitle }) => (
@@ -57,6 +57,9 @@ const Header = ({ siteTitle, siteSubTitle }) => (
           </li>
           <li className="uk-active">
             <Link to="/work-experience" onClick={offCanvasClose}>work experience</Link>
+          </li>
+          <li className="uk-active">
+            <Link to="/volunteer-experience" onClick={offCanvasClose}>volunteer experience</Link>
           </li>
           <li className="uk-active">
             <Link to="/contact" onClick={offCanvasClose}>contact</Link>
