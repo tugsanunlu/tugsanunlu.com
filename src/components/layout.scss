@@ -623,6 +623,11 @@ pre tt:after {
 }
 
 /* custom */
+svg.svg-inline--fa {
+  width: 23px;
+  height: 23px;
+}
+
 a:hover {
   text-decoration: none;
   color: #000;
@@ -659,10 +664,7 @@ footer .footer_links a {
   font-size: 1.3rem;
   font-weight: 600;
 }
-footer .footer_links svg {
-  width: 23px;
-  height: 23px;
-}
+
 footer svg:hover {
   transition: all 0.5s;
   transform: scale(1.2);
