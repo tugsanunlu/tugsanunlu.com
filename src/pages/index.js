@@ -12,7 +12,7 @@ const IndexPage = () => {
     Axios.get(
       "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@tugsanunlu"
     ).then(resp => {
-      setMediumPosts(resp.data.items);
+      setMediumPosts(resp.data.items.filter(item => item.categories.length));
     })
   }, [])
 
