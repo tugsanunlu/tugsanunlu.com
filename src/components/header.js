@@ -13,6 +13,14 @@ const Header = ({ siteTitle, siteSubTitle }) => {
     setActivePath(globalHistory.location.pathname);
   }, [])
 
+  const menus = [
+    { text: "home", path: "/" },
+    { text: "work experience", path: "/work-experience" },
+    { text: "education", path: "/education" },
+    { text: "volunteer experience", path: "/volunteer-experience" },
+    { text: "contact", path: "/contact" }
+  ]
+
   return (
     <header
       style={{
@@ -52,25 +60,15 @@ const Header = ({ siteTitle, siteSubTitle }) => {
       <div id="offcanvas-push" data-uk-offcanvas="mode: push;">
         <div className="uk-offcanvas-bar uk-flex uk-flex-column">
           <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-            <li className={activePath === '/' ? 'uk-active' : ''}>
-              <Link to="/">home</Link>
-            </li>
-            <li className={activePath === '/work-experience' ? 'uk-active' : ''}>
-              <Link to="/work-experience">work experience</Link>
-            </li>
-            <li className={activePath === '/education' ? 'uk-active' : ''}>
-              <Link to="/education">education</Link>
-            </li>
-            <li className={activePath === '/volunteer-experience' ? 'uk-active' : ''}>
-              <Link to="/volunteer-experience">volunteer experience</Link>
-            </li>
-            <li className={activePath === '/contact' ? 'uk-active' : ''}>
-              <Link to="/contact">contact</Link>
-            </li>
+            {menus.map(menu =>
+              <li li className={activePath === menu.path ? 'uk-active' : ''}>
+                <Link to={menu.path}>{menu.text}</Link>
+              </li>
+            )}
           </ul>
         </div>
       </div>
-    </header>
+    </header >
   )
 }
 

@@ -5,7 +5,7 @@ const MediumPost = ({ post }) => {
     <div className="uk-width-1-1@m uk-margin">
       <div className="uk-card uk-card-default">
         <div data-uk-grid>
-          <div className="uk-width-3-4@m">
+          <div className="uk-width-3-5@m">
             <div className="uk-card-body">
               <h3 className="uk-card-title">[tr] {post.title}</h3>
               <div>{post.categories.map(category => `#${category} `)}</div>
@@ -15,8 +15,8 @@ const MediumPost = ({ post }) => {
               </a>
             </div>
           </div>
-          <div className="uk-width-1-4@m uk-padding">
-            <img src={post.thumbnail} alt={post.title} className="uk-margin" />
+          <div className="uk-width-2-5@m">
+            <img src={post.thumbnail} alt={post.title} className="uk-padding" />
           </div>
         </div>
       </div>
