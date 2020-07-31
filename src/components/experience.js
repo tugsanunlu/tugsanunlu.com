@@ -7,6 +7,11 @@ const Experience = ({ experience }) => {
         <div className="uk-card-badge uk-label">{experience.date}</div>
         <h3 className="uk-card-title uk-margin-top">{experience.company}</h3>
         <div>{experience.title}</div>
+        {experience.subTitle &&
+          <div>
+            <small>{experience.subTitle}</small>
+          </div>
+        }
       </div>
     </div>
   )

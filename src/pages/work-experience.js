@@ -5,7 +5,7 @@ const experiences = {
   title: "work experience",
   list: [
     {
-      company: "OKULİSTİK",
+      company: "OKULISTIK",
       date: "February 2020 - Present",
       title: "FRONT-END DEVELOPER",
       isActive: true

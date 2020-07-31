@@ -11,7 +11,8 @@ const Header = ({ siteTitle, siteSubTitle }) => (
       background: `#660e1e`,
       marginBottom: `1.45rem`,
     }}
-    className="uk-margin-medium-bottom uk-box-shadow-large"
+    className="uk-margin-medium-bottom uk-box-shadow-xlarge"
+    data-uk-sticky="top: 200; animation: uk-animation-slide-top;"
   >
     <div className="header__links">
       <FontAwesomeIcon icon={["fas", "bars"]} data-uk-toggle="target: #offcanvas-push" onClick={offCanvasBeforeShow} />
@@ -49,6 +50,9 @@ const Header = ({ siteTitle, siteSubTitle }) => (
           </li>
           <li className="uk-active">
             <Link to="/work-experience">work experience</Link>
+          </li>
+          <li className="uk-active">
+            <Link to="/education">education</Link>
           </li>
           <li className="uk-active">
             <Link to="/volunteer-experience">volunteer experience</Link>
