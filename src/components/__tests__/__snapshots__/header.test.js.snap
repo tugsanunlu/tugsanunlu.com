@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Renders check 1`] = `
+<header
+  className="uk-margin-medium-bottom uk-box-shadow-xlarge"
+  style={
+    Object {
+      "background": "#660e1e",
+      "marginBottom": "1.45rem",
+    }
+  }
+>
+  <div
+    className="header__links"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-bars fa-w-14 "
+      data-icon="bars"
+      data-prefix="fas"
+      data-uk-toggle="target: #offcanvas-push"
+      focusable="false"
+      onClick={[Function]}
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </div>
+  <div
+    style={
+      Object {
+        "margin": "0 auto",
+        "maxWidth": 960,
+        "padding": "1.45rem 1.0875rem",
+      }
+    }
+  >
+    <h1
+      style={
+        Object {
+          "margin": 0,
+        }
+      }
+    >
+      <a
+        aria-current="page"
+        className=""
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        style={
+          Object {
+            "color": "white",
+            "textDecoration": "none",
+          }
+        }
+      >
+        
+        <div
+          style={
+            Object {
+              "fontSize": "1.1rem",
+              "fontWeight": "500",
+              "marginTop": "5px",
+            }
+          }
+        />
+      </a>
+    </h1>
+  </div>
+  <div
+    data-uk-offcanvas="mode: push;"
+    id="offcanvas-push"
+  >
+    <div
+      className="uk-offcanvas-bar uk-flex uk-flex-column"
+    >
+      <ul
+        className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical"
+      >
+        <li
+          className=""
+        >
+          <a
+            aria-current="page"
+            className=""
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            style={Object {}}
+          >
+            home
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            href="/work-experience"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            work experience
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            href="/education"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            education
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            href="/volunteer-experience"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            volunteer experience
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a
+            href="/contact"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+`;

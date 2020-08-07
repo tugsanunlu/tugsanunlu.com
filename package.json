@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "tugsanunlu-com",
   "private": true,
   "description": "Tuğsan Ünlü's personel website.",
   "version": "0.1.0",
@@ -27,7 +27,12 @@
     "uikit": "^3.5.4"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "babel-jest": "^26.2.2",
+    "babel-preset-gatsby": "^0.5.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.2.2",
+    "prettier": "2.0.5",
+    "react-test-renderer": "^16.13.1"
   },
   "keywords": [
     "gatsby"
@@ -40,7 +45,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

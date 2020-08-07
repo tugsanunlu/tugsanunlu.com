@@ -12,7 +12,6 @@ const Header = ({ siteTitle, siteSubTitle }) => {
   useEffect(() => {
     setActivePath(globalHistory.location.pathname);
   }, [])
-
   const menus = [
     { text: "home", path: "/" },
     { text: "work experience", path: "/work-experience" },
@@ -61,7 +60,7 @@ const Header = ({ siteTitle, siteSubTitle }) => {
         <div className="uk-offcanvas-bar uk-flex uk-flex-column">
           <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
             {menus.map(menu =>
-              <li li className={activePath === menu.path ? 'uk-active' : ''}>
+              <li className={activePath === menu.path ? 'uk-active' : ''} key={menu.text}>
                 <Link to={menu.path}>{menu.text}</Link>
               </li>
             )}
