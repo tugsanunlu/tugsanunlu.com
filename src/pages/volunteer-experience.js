@@ -8,28 +8,28 @@ const experiences = {
       company: "MOZILLA",
       date: "MAY 2020 - PRESENT",
       title: "MDN CONTRIBUTOR",
-      isActive: true
+      isActive: true,
     },
     {
       company: "WIKIPEDIA",
       date: "OCTOBER 2016 - PRESENT",
       title: "CONTRIBUTING WRITER",
-      isActive: true
+      isActive: true,
     },
     {
       company: "OY VE ÖTESİ",
       date: "JULY 2014 - PRESENT",
       title: "INDEPENDENT VOLUNTEER",
-      isActive: true
+      isActive: true,
     },
     {
       company: "PARDUS",
       date: "JUNE 2009 - MAY 2011",
       title: "COMMUNITY CONTRIBUTOR",
-      isActive: false
-    }
-  ]
-};
+      isActive: false,
+    },
+  ],
+}
 
 const Experiences = () => (
   <ExperienceList title={experiences.title} experiences={experiences.list} />

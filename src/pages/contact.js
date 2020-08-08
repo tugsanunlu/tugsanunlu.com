@@ -11,9 +11,7 @@ const Contact = () => (
         <div className="uk-card uk-card-default">
           <div className="uk-card-body">
             <h3 className="uk-card-title">e-mail</h3>
-            <a href="mailto: unlutugsan@gmail.com">
-              unlutugsan@gmail.com
-            </a>
+            <a href="mailto: unlutugsan@gmail.com">unlutugsan@gmail.com</a>
           </div>
         </div>
       </div>
@@ -21,7 +19,11 @@ const Contact = () => (
         <div className="uk-card uk-card-default">
           <div className="uk-card-body">
             <h3 className="uk-card-title">gpg</h3>
-            <a href="http://keys.gnupg.net/pks/lookup?op=get&search=0xB229E37A61B4740E" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://keys.gnupg.net/pks/lookup?op=get&search=0xB229E37A61B4740E"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               0xb229e37a61b4740e
             </a>
           </div>

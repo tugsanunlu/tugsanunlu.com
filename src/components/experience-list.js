@@ -8,10 +8,13 @@ const ExperienceList = ({ title, experiences }) => {
     <Layout>
       <SEO title={title} />
       <h2>{title}</h2>
-      <div className="uk-child-width-1-2@m uk-grid-small uk-grid-match" data-uk-grid>
-        {experiences.map(experience =>
+      <div
+        className="uk-child-width-1-2@m uk-grid-small uk-grid-match"
+        data-uk-grid
+      >
+        {experiences.map(experience => (
           <Experience key={experience.company} experience={experience} />
-        )}
+        ))}
       </div>
     </Layout>
   )

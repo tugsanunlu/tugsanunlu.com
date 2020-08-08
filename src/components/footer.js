@@ -1,31 +1,62 @@
 import React from "react"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import '../utils/fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import "../utils/fontawesome"
+
+const accounts = [
+  {
+    faCategory: "fab",
+    faIcon: "twitter",
+    url: "https://twitter.com/tugsanunlu",
+  },
+  {
+    faCategory: "fab",
+    faIcon: "instagram",
+    url: "https://instagram.com/tugsanunlu",
+  },
+  {
+    faCategory: "fab",
+    faIcon: "github",
+    url: "https://github.com/tugsanunlu",
+  },
+  {
+    faCategory: "fab",
+    faIcon: "medium",
+    url: "https://medium.com/@tugsanunlu",
+  },
+  {
+    faCategory: "fab",
+    faIcon: "keybase",
+    url: "https://keybase.io/tugsanunlu",
+  },
+  {
+    faCategory: "fab",
+    faIcon: "linkedin",
+    url: "https://www.linkedin.com/in/tugsanunlu",
+  },
+  {
+    faCategory: "fas",
+    faIcon: "theater-masks",
+    url: "https://tiyatrogunlugu.com",
+  },
+  {
+    faCategory: "fas",
+    faIcon: "envelope",
+    url: "mailto:unlutugsan@gmail.com",
+  },
+]
 
 const Footer = () => (
   <footer>
     <div className="footer_links">
-      <a href="https://twitter.com/tugsanunlu" rel="noopener noreferrer" target="_blank">
-          <FontAwesomeIcon icon={["fab", "twitter"]} />
-      </a>    
-      <a href="https://instagram.com/tugsanunlu" rel="noopener noreferrer" target="_blank">   
-          <FontAwesomeIcon icon={["fab", "instagram"]} /> 
-      </a>
-      <a href="https://github.com/tugsanunlu" rel="noopener noreferrer" target="_blank">        
-          <FontAwesomeIcon icon={["fab", "github"]} />  
-      </a>  
-      <a href="https://medium.com/@tugsanunlu" rel="noopener noreferrer" target="_blank">        
-          <FontAwesomeIcon icon={["fab", "medium"]} />   
-      </a>
-      <a href="https://www.linkedin.com/in/tugsanunlu" rel="noopener noreferrer" target="_blank">         
-          <FontAwesomeIcon icon={["fab", "linkedin"]} />          
-      </a>
-      <a href="https://tiyatrogunlugu.com" rel="noopener noreferrer" target="_blank">         
-          <FontAwesomeIcon icon={["fas", "theater-masks"]} />          
-      </a>
-      <a href="mailto:unlutugsan@gmail.com" rel="noopener noreferrer" target="_blank">         
-          <FontAwesomeIcon icon={["fas", "envelope"]} />          
-      </a>
+      {accounts.map(account => (
+        <a
+          href={account.url}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={[account.faCategory, account.faIcon]} />
+        </a>
+      ))}
     </div>
   </footer>
 )

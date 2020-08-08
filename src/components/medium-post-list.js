@@ -10,8 +10,14 @@ const Medium = ({ posts }) => {
       <h2>recent blog posts</h2>
       <div data-uk-grid>{postList}</div>
       <div className="uk-text-center">
-        <a href="https://medium.com/@tugsanunlu" target="_blank" rel="noopener noreferrer">
-          <button className="uk-button uk-button-secondary">SEE ALL BLOG POSTS</button>
+        <a
+          href="https://medium.com/@tugsanunlu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="uk-button uk-button-secondary">
+            SEE ALL BLOG POSTS
+          </button>
         </a>
       </div>
     </div>

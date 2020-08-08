@@ -7,4 +7,4 @@ describe("Header", () => {
     const tree = renderer.create(<Header />).toJSON()
     expect(tree).toMatchSnapshot()
   })
-});
+})

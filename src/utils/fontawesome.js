@@ -5,13 +5,14 @@ import {
   faGithub,
   faMedium,
   faLinkedin,
+  faKeybase,
 } from "@fortawesome/free-brands-svg-icons"
 import {
   faEnvelope,
   faTheaterMasks,
   faAngleRight,
   faBars,
-  faSpinner
+  faSpinner,
 } from "@fortawesome/free-solid-svg-icons"
 
 library.add(
@@ -24,5 +25,6 @@ library.add(
   faTheaterMasks,
   faAngleRight,
   faBars,
-  faSpinner
+  faSpinner,
+  faKeybase
 )

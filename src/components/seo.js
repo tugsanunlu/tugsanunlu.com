@@ -44,8 +44,8 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           href: favicon,
-          rel: "icon"
-        }
+          rel: "icon",
+        },
       ]}
       meta={[
         {

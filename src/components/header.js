@@ -7,17 +7,16 @@ import { offCanvasBeforeShow } from "../utils/uikit"
 import { globalHistory } from "@reach/router"
 
 const Header = ({ siteTitle, siteSubTitle }) => {
-
-  const [activePath, setActivePath] = useState(0);
+  const [activePath, setActivePath] = useState(0)
   useEffect(() => {
-    setActivePath(globalHistory.location.pathname);
+    setActivePath(globalHistory.location.pathname)
   }, [])
   const menus = [
     { text: "home", path: "/" },
     { text: "work experience", path: "/work-experience" },
     { text: "education", path: "/education" },
     { text: "volunteer experience", path: "/volunteer-experience" },
-    { text: "contact", path: "/contact" }
+    { text: "contact", path: "/contact" },
   ]
 
   return (
@@ -29,7 +28,11 @@ const Header = ({ siteTitle, siteSubTitle }) => {
       className="uk-margin-medium-bottom uk-box-shadow-xlarge"
     >
       <div className="header__links">
-        <FontAwesomeIcon icon={["fas", "bars"]} data-uk-toggle="target: #offcanvas-push" onClick={offCanvasBeforeShow} />
+        <FontAwesomeIcon
+          icon={["fas", "bars"]}
+          data-uk-toggle="target: #offcanvas-push"
+          onClick={offCanvasBeforeShow}
+        />
       </div>
       <div
         style={{
@@ -48,7 +51,11 @@ const Header = ({ siteTitle, siteSubTitle }) => {
           >
             {siteTitle}
             <div
-              style={{ fontWeight: "500", fontSize: "1.1rem", marginTop: "5px" }}
+              style={{
+                fontWeight: "500",
+                fontSize: "1.1rem",
+                marginTop: "5px",
+              }}
             >
               {siteSubTitle}
             </div>
@@ -59,15 +66,18 @@ const Header = ({ siteTitle, siteSubTitle }) => {
       <div id="offcanvas-push" data-uk-offcanvas="mode: push;">
         <div className="uk-offcanvas-bar uk-flex uk-flex-column">
           <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-            {menus.map(menu =>
-              <li className={activePath === menu.path ? 'uk-active' : ''} key={menu.text}>
+            {menus.map(menu => (
+              <li
+                className={activePath === menu.path ? "uk-active" : ""}
+                key={menu.text}
+              >
                 <Link to={menu.path}>{menu.text}</Link>
               </li>
-            )}
+            ))}
           </ul>
         </div>
       </div>
-    </header >
+    </header>
   )
 }
 
