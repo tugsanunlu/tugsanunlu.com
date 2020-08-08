@@ -11,6 +11,12 @@ const experiences = {
       isActive: true
     },
     {
+      company: "WIKIPEDIA",
+      date: "OCTOBER 2016 - PRESENT",
+      title: "CONTRIBUTING WRITER",
+      isActive: true
+    },
+    {
       company: "OY VE ÖTESİ",
       date: "JULY 2014 - PRESENT",
       title: "INDEPENDENT VOLUNTEER",
