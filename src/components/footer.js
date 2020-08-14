@@ -53,6 +53,7 @@ const Footer = () => (
           href={account.url}
           rel="noopener noreferrer"
           target="_blank"
+          key={account.faIcon}
         >
           <FontAwesomeIcon icon={[account.faCategory, account.faIcon]} />
         </a>
