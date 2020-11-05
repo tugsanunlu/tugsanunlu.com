@@ -5,6 +5,13 @@ const experiences = {
   title: "education",
   list: [
     {
+      company: "GAZI UNIVERSITY",
+      date: "2020 - Present",
+      title: "COMPUTER FORENSICS",
+      subTitle: "MASTER'S DEGREE",
+      isActive: true,
+    },
+    {
       company: "ANADOLU UNIVERSITY",
       date: "2016 - 2020",
       title: "BUSINESS ADMINISTRATION",
