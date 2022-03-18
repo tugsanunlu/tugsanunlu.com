@@ -6,9 +6,9 @@ const experiences = {
   list: [
     {
       company: "MOZILLA",
-      date: "MAY 2020 - PRESENT",
+      date: "MAY 2020 - MAY 2021",
       title: "MDN CONTRIBUTOR",
-      isActive: true,
+      isActive: false,
     },
     {
       company: "WIKIPEDIA",
