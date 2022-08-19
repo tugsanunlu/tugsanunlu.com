@@ -13,7 +13,7 @@ const Header = ({ title }: HeaderProps) => {
         <title>{`${title} | tuğsan ünlü - front-end developer`}</title>
         <meta name="description" content="tuğsan ünlü - front-end developer" />
       </Head>
-      <header>
+      <header className={styles.header}>
         <div className="container">
           <div className={styles.title}>tuğsan ünlü</div>
           <div className={styles.subTitle}>front-end developer</div>

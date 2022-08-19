@@ -1,0 +1,12 @@
+.footerLinks {
+  margin: 40px 0px 20px 0px;
+  text-align: center;
+}
+.footerLinks a {
+  margin: 7px;
+  font-size: 1.3rem;
+  transition: all 0.2s;
+}
+.footerLinks a:hover {
+  color: #f6c90e;
+}

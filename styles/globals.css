@@ -13,11 +13,18 @@ a {
 }
 
 * {
+  font-family: 'Exo 2', sans-serif;
   box-sizing: border-box;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1100px;
   margin: auto;
-  padding: 20px;
+  margin-top: 15px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
 }
