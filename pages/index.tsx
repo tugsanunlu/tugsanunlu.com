@@ -33,7 +33,7 @@ const Home: NextPage = () => {
 
   return (
     <div>
-      <Header title="anasayfa" />
+      <Header title="home" />
       <main>
         <div className="container">
           <Title icon={faStar} title="recent blog posts" />

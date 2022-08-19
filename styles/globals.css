@@ -1,6 +1,6 @@
 html,
 body {
-  padding: 0;
+  padding: 0px 10px;
   margin: 0;
   font-family: 'Exo 2', sans-serif;
   color: #eeeeee;
@@ -27,4 +27,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+  .list {
+    justify-content: center;
+  }
 }

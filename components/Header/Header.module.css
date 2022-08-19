@@ -10,3 +10,35 @@
   font-weight: 600;
   font-size: 1.3em;
 }
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  list-style-type: none;
+}
+.navbar li {
+  float: left;
+  margin: 10px;
+  font-weight: 800;
+}
+.active::before {
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #f6c90e;
+  margin-top: -4px;
+  content: '';
+}
+
+@media screen and (max-width: 1024px) {
+  .navbarContainer {
+    flex-direction: column;
+  }
+  .navbar {
+    padding: 0px;
+  }
+  .navbar li {
+    float: none;
+  }
+}
