@@ -1,13 +1,11 @@
-import { useEffect, useState } from 'react';
-import type { NextPage } from 'next';
+import type { NextPage, InferGetServerSidePropsType } from 'next';
 import BlogPostCard from '../components/BlogPostCard';
 import Button from '../components/Button';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Title from '../components/Title';
-import { faStar, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { getBlogPosts } from '../api/blog';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface IBlogPost {
   title: string;
@@ -22,15 +20,11 @@ interface IBlogPost {
   categories: string[];
 }
 
-const Home: NextPage = () => {
-  const [blogPosts, setBlogPosts] = useState<IBlogPost[]>([]);
+interface PageProps {
+  blogPosts: IBlogPost[];
+}
 
-  useEffect(() => {
-    getBlogPosts().then((resp) => {
-      setBlogPosts(resp.items);
-    });
-  }, []);
-
+const Home: NextPage<PageProps> = ({ blogPosts }) => {
   return (
     <div>
       <Header title="home" />
@@ -38,26 +32,22 @@ const Home: NextPage = () => {
         <div className="container">
           <Title icon={faStar} title="recent blog posts" />
 
-          {!blogPosts.length ? (
-            <FontAwesomeIcon icon={faSpinner} pulse />
-          ) : (
-            <div className="list">
-              {blogPosts.map((post) => (
-                <a
-                  href={post.link}
-                  key={post.guid}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <BlogPostCard
-                    title={post.title}
-                    categories={post.categories}
-                    thumbnail={post.thumbnail}
-                  />
-                </a>
-              ))}
-            </div>
-          )}
+          <div className="list">
+            {blogPosts.map((post) => (
+              <a
+                href={post.link}
+                key={post.guid}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BlogPostCard
+                  title={post.title}
+                  categories={post.categories}
+                  thumbnail={post.thumbnail}
+                />
+              </a>
+            ))}
+          </div>
 
           <div
             style={{ display: 'flex', justifyContent: 'center', marginTop: 30 }}
@@ -76,5 +66,14 @@ const Home: NextPage = () => {
     </div>
   );
 };
+
+export async function getServerSideProps() {
+  const data = await getBlogPosts();
+  const items = data.items;
+
+  return {
+    props: { blogPosts: items },
+  };
+}
 
 export default Home;
