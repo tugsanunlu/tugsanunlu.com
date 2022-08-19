@@ -43,7 +43,12 @@ const Home: NextPage = () => {
           ) : (
             <div className="list">
               {blogPosts.map((post) => (
-                <a href={post.link} key={post.guid} target="_blank">
+                <a
+                  href={post.link}
+                  key={post.guid}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <BlogPostCard
                     title={post.title}
                     categories={post.categories}
@@ -57,7 +62,11 @@ const Home: NextPage = () => {
           <div
             style={{ display: 'flex', justifyContent: 'center', marginTop: 30 }}
           >
-            <a href="https://medium.com/@tugsanunlu" target="_blank">
+            <a
+              href="https://medium.com/@tugsanunlu"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Button text="read more" />
             </a>
           </div>
