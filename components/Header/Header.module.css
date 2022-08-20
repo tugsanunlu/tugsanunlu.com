@@ -43,5 +43,6 @@
   }
   .navbar li {
     float: none;
+    margin-left: 0px;
   }
 }
