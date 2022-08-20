@@ -1,9 +1,7 @@
-import { useEffect, useState } from 'react';
 import type { NextPage } from 'next';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Title from '../components/Title';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const Education: NextPage = () => {
   return (
@@ -11,7 +9,20 @@ const Education: NextPage = () => {
       <Header title="education" />
       <main>
         <div className="container">
-          <Title icon={faStar} title="education" />
+          <Title title="education" />
+          <ul>
+            <li>
+              Gazi University, Master’s degree, Computer Forensics, 2020 - 2022
+            </li>
+            <li>
+              Anadolu University, Bachelor's degree, Business Administration,
+              2016 - 2020
+            </li>
+            <li>
+              Marmara University, Associate's degree, Computer Technology and
+              Programming, 2011 - 2013
+            </li>
+          </ul>
         </div>
       </main>
       <Footer />

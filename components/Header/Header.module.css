@@ -22,6 +22,9 @@
   margin: 10px;
   font-weight: 800;
 }
+.navbar li a {
+  color: #fff;
+}
 .active::before {
   position: absolute;
   width: 40px;

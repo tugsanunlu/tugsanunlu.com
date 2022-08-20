@@ -29,6 +29,27 @@ a {
   gap: 25px;
 }
 
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+ul li a {
+  color: #f6c90e;
+}
+
+.yellow-text {
+  color: #f6c90e;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
 @media screen and (max-width: 1024px) {
   .list {
     justify-content: center;

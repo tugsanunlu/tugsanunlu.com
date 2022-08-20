@@ -13,6 +13,7 @@ const routes = [
   { title: 'work experience', path: '/work-experience' },
   { title: 'education', path: '/education' },
   { title: 'volunteer experience', path: '/volunteer-experience' },
+  { title: 'blog', path: '/blog' },
   { title: 'contact', path: '/contact' },
 ];
 

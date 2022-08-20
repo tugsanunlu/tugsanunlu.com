@@ -1,9 +1,7 @@
-import { useEffect, useState } from 'react';
 import type { NextPage } from 'next';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Title from '../components/Title';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const Contact: NextPage = () => {
   return (
@@ -11,7 +9,23 @@ const Contact: NextPage = () => {
       <Header title="contact" />
       <main>
         <div className="container">
-          <Title icon={faStar} title="contact" />
+          <Title title="contact" />
+          <ul>
+            <li>
+              email:{' '}
+              <a href="mailto:unlutugsan@gmail.com">unlutugsan@gmail.com</a>
+            </li>
+            <li>
+              gpg:{' '}
+              <a
+                href="https://keyserver.ubuntu.com/pks/lookup?search=0xb229e37a61b4740e&fingerprint=on&op=index"
+                target="_blank"
+                rel="noreferrer"
+              >
+                0xb229e37a61b4740e
+              </a>
+            </li>
+          </ul>
         </div>
       </main>
       <Footer />
