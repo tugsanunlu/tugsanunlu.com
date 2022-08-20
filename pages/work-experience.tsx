@@ -11,10 +11,24 @@ const WorkExperience: NextPage = () => {
         <div className="container">
           <Title title="work experience" />
           <ul>
-            <li>Front-End Developer, Okulistik, Feb 2020 - Present</li>
-            <li>Front-End Developer, Itopya, Jan 2018 - Jun 2019</li>
-            <li>Front-End Developer, Treegroup, Aug 2013 - Dec 2017</li>
-            <li>Web Developer Intern, Evrimnet Digital, Jun 2012 - Aug 2012</li>
+            <li>
+              Front-End Developer,{' '}
+              <span className="yellow-text">Okulistik</span>, Feb 2020 - Present
+            </li>
+            <li>
+              Front-End Developer, <span className="yellow-text">Itopya</span>,
+              Jan 2018 - Jun 2019
+            </li>
+            <li>
+              Front-End Developer,{' '}
+              <span className="yellow-text">Treegroup</span>, Aug 2013 - Dec
+              2017
+            </li>
+            <li>
+              Web Developer Intern,{' '}
+              <span className="yellow-text">Evrimnet Digital</span>, Jun 2012 -
+              Aug 2012
+            </li>
           </ul>
         </div>
       </main>

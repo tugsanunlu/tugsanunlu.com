@@ -12,15 +12,21 @@ const Education: NextPage = () => {
           <Title title="education" />
           <ul>
             <li>
-              Gazi University, Master’s degree, Computer Forensics, 2020 - 2022
+              Gazi University, Master&apos;s degree,{' '}
+              <span className="yellow-text">Computer Forensics</span>, 2020 -
+              2022
             </li>
             <li>
-              Anadolu University, Bachelor`&apos;`s degree, Business
-              Administration, 2016 - 2020
+              Anadolu University, Bachelor&apos;s degree,{' '}
+              <span className="yellow-text">Business Administration</span>, 2016
+              - 2020
             </li>
             <li>
-              Marmara University, Associate`&apos;`s degree, Computer Technology
-              and Programming, 2011 - 2013
+              Marmara University, Associate&apos;s degree,{' '}
+              <span className="yellow-text">
+                Computer Technology and Programming
+              </span>
+              , 2011 - 2013
             </li>
           </ul>
         </div>

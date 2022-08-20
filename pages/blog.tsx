@@ -26,7 +26,7 @@ interface PageProps {
 const Blog: NextPage<PageProps> = ({ blogPosts }) => {
   return (
     <div>
-      <Header title="home" />
+      <Header title="blog" />
       <main>
         <div className="container">
           <Title title="recent blog posts" />
