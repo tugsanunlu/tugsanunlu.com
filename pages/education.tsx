@@ -15,12 +15,12 @@ const Education: NextPage = () => {
               Gazi University, Master’s degree, Computer Forensics, 2020 - 2022
             </li>
             <li>
-              Anadolu University, Bachelor's degree, Business Administration,
-              2016 - 2020
+              Anadolu University, Bachelor`&apos;`s degree, Business
+              Administration, 2016 - 2020
             </li>
             <li>
-              Marmara University, Associate's degree, Computer Technology and
-              Programming, 2011 - 2013
+              Marmara University, Associate`&apos;`s degree, Computer Technology
+              and Programming, 2011 - 2013
             </li>
           </ul>
         </div>

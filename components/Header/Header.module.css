@@ -27,7 +27,7 @@
 }
 .active::before {
   position: absolute;
-  width: 40px;
+  width: 30px;
   height: 2px;
   background-color: #f6c90e;
   margin-top: 24px;

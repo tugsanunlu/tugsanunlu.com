@@ -5,7 +5,7 @@
 }
 .title::before {
   position: absolute;
-  width: 100px;
+  width: 60px;
   height: 2px;
   border-radius: 5px;
   margin-top: -5px;

@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <div className="container">
           <Title title="hi there 👋" />
           <p>
-            I'm an Istanbul-based{' '}
+            I`&apos;`m an Istanbul-based{' '}
             <span className="yellow-text">Front-End Developer</span>.
           </p>
           <p>
