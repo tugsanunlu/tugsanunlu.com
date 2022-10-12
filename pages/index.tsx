@@ -25,14 +25,14 @@ const Home: NextPage = () => {
           <p>
             I have been working at{' '}
             <a
-              href="https://okulistik.com/"
+              href="https://akbank.com/"
               target="_blank"
               rel="noreferrer"
               className="yellow-text"
             >
-              Okulistik
+              Akbank
             </a>{' '}
-            since February 2020.
+            since September 2022.
           </p>
           <div className="tags">
             <Button text="#javascript" />

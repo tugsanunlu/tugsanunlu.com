@@ -12,8 +12,13 @@ const WorkExperience: NextPage = () => {
           <Title title="work experience" />
           <ul>
             <li>
+              Senior Front-End Developer,{' '}
+              <span className="yellow-text">Akbank</span>, Sep 2022 - Present
+            </li>
+            <li>
               Front-End Developer,{' '}
-              <span className="yellow-text">Okulistik</span>, Feb 2020 - Present
+              <span className="yellow-text">Okulistik</span>, Feb 2020 - Aug
+              2022
             </li>
             <li>
               Front-End Developer, <span className="yellow-text">Itopya</span>,
